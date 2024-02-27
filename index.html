@@ -3,56 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="static/main.css">
         <title>Hounter</title>
     </head>
     <body>
         <img class="background-img" src="./icons/ColorBlur.svg"/>
         <header>
-            <img class="header-logo" src="./icons/logo_pic.svg"/>
-            <h1>Hounter</h1>
-            <nav class="header-nav">
-                <div class = "header-nav-media">
-                    <img class="header-nav-media-pic" src="./icons/image6.svg"/>
-                    <div class = "header-nav-media-avatars">
-                        <img class="header-nav-media-avatars-pic" src="./icons/Ellipse 6.svg"/>
-                        <img class="header-nav-media-avatars-pic" src="./icons/Ellipse 6.svg"/>
-                        <img class="header-nav-media-avatars-pic" src="./icons/Ellipse 6.svg"/>
-                        <h4>56 Houses</h4>
-                        <p></p>
-                    </div>
-                    <div class = "header-nav-media-avatars">
-                        <img class="header-nav-media-avatars-pic" src="./icons/Ellipse 6.svg"/>
-                        <h4>1K+ People</h4>
-                        <p>Successfully Getting Home</p>
-                    </div>
-                </div>
+            <div class = "navbar">
+                <img class="header-logo" src="./icons/logo_pic.svg"/>
+                <h1>Hounter</h1>
                 <a class="header-link" href="#">About Us</a>
                 <a class="header-link" href="#">Article</a>
-                <select class="property-select">
-                    <option value="" disabled selected>Property</option>
-                    <option class="property-option">Option1</option>
-                    <option class="property-option">Option2</option>
-                    <option class="property-option">Option2</option>
-                </select>
+                <a class="header-link" href="#">Property &#9660;</a>
                 <button class="sign-up-btn">Sign up</button>
-            </nav>
+            </div>
+            <img class="header-nav-media-bottom" src="./icons/Frame 13.png"/>
+            <img class= "header-nav-media-pic" src="./icons/image6.svg"/>
         </header>
         <main class = "main">
             <section class = "banner">
                 <div>
-                    <h1 class="banner-subheader">Find The Place to Live Your Dreams Easily Here</h3>
+                    <p class="banner-subheader">Find The Place to Live Your Dreams Easily Here</p>
                     <p class="banner-header">
                         Everything you need about finding your place to live will be here, where it will be easier for you
                     </p>
                     <form action="/search" method="get" class = "banner-searchbar">
-                        <input class = "banner-searchbar" type="text" placeholder="Search for the location you want!">
-                        <input class = "banner-searchbar" type="submit" value="Search >">
+                        <img class="input-icon" src="./icons/map.png" alt="Map Icon">
+                        <input class = "banner-searchbar-input" type="text" placeholder="Search for the location you want!">
+                        <input class = "banner-searchbar-btn" type="submit" value="Search >">
                     </form>
                 </div>
             <div class = "partnership">
                 <p>
                     Our Partnership
                 </p>
+                <div class = "partnership-container">
                 <a href="#">
                     <img class = "partnership-img" src="./icons/traveloka_logo 2.svg">
                 </a>
@@ -65,196 +50,248 @@
                 <a href="#">
                     <img class = "partnership-img" src="./icons/traveloka_logo 5.svg">
                 </a>
+                </div>
             </div>
             </section>
             <section class = "recommendation">
+                <p class = "subheader">Our recommendation</p>
                 <nav class = "recommendation-nav">
-                    <p>Our recommendation</p>
-                    <h1>Featured House</h1>
-                    <button class="recomendation-btn_house">House</button>
-                    <button class="recomendation-btn_villa">Villa</button>
-                    <button class="recomendation-btn_apartment">Apartment</button>
-                    <button class="recomendation-btn_left"><</button>
-                    <button class="recomendation-btn_left">></button>
+                    <div>
+                        <h1 class = "main-header">Featured House</h1>
+                    </div>
+                    <div class = "reccomendation-btns">
+                        <img class = "house" src="./icons/Vectorhouse.png"> 
+                        <button class="recomendation-btn_house">House</button>
+                        <img class = "house" src="./icons/Vectorvilla.png">
+                        <button class="recomendation-btn-villa">Villa</button>
+                        <img class = "house" src="./icons/Vectorappartment.png">
+                        <button class="recomendation-btn_apartment">Apartment</button>
+                        <button class="recomendation-btn_left"><</button>
+                        <button class="recomendation-btn_right">></button>
+                    </div>
                 </nav>
                 <div class="photos">
                     <div class = "photos-sec">
                         <img class = "photos-sec-img" src="./icons/Img.svg">
                         <h3>Roselands House</h3>
-                        <p>$ 35.000.000</p>
+                        <p class = "price">$ 35.000.000</p>
                         <div class = "photo-sec-avt">
-                            <img class = "photos-sec-avt" src="./icons/Ellipse 6.svg">   
-                            <h3>Dianne Russell</h3>     
-                            <p>Manchester, Kentucky</p>     
+                            <img class = "photos-sec-avt-img" src="./icons/Ellipse 6.svg">   
+                            <div>
+                                <h3 class = "name">Dianne Russell</h3>
+                                <p class = "location">Manchester, Kentucky</p>   
+                            </div>       
                         </div>
                     </div>
                     <div class = "photos-sec">
                         <img class = "photos-sec-img" src="./icons/Img2.svg">
                         <h3>Woodlandside</h3>
-                        <p>$ 20.000.000</p>
+                        <p class = "price">$ 20.000.000</p>
                         <div class = "photo-sec-avt">
-                            <img class = "photos-sec-avt" src="./icons/Ellipse 61.svg">   
-                            <h3>Robert Fox</h3>     
-                            <p>Dr. San Jose, South Dakota</p>     
+                            <img class = "photos-sec-avt-img" src="./icons/Ellipse 61.svg">   
+                            <div>
+                            <h3 class = "name">Robert Fox</h3>     
+                            <p class = "location">Dr. San Jose, South Dakota</p>
+                            </div>     
                         </div>
                     </div>
                     <div class = "photos-sec">
                         <img class = "photos-sec-img" src="./icons/Img3.svg">
                         <h3>The Old Lighthouse</h3>
-                        <p>$ 44.000.000</p>
+                        <p class = "price">$ 44.000.000</p>
                         <div class = "photo-sec-avt">
-                            <img class = "photos-sec-avt" src="./icons/Ellipse 62.svg">   
-                            <h3>Ronald Richards</h3>     
-                            <p>Santa Ana, Illinois</p>     
+                            <img class = "photos-sec-avt-img" src="./icons/Ellipse 62.svg">   
+                            <div>
+                            <h3 class = "name">Ronald Richards</h3>     
+                            <p class = "location">Santa Ana, Illinois</p> 
+                            </div>      
                         </div>
                     </div>
                     <div class = "photos-sec">
                         <img class = "photos-sec-img" src="./icons/Img4.svg">
                         <h3>Cosmo's House</h3>
-                        <p>$ 22.000.000</p>
+                        <p class = "price">$ 22.000.000</p>
                         <div class = "photo-sec-avt">
-                            <img class = "photos-sec-avt" src="./icons/Ellipse 63.svg">   
-                            <h3>Jenny</h3>     
-                            <p>Preston Rd.</p>     
+                            <img class = "photos-sec-avt-img" src="./icons/Ellipse 63.svg">
+                            <div>  
+                                <h3 class = "name">Jenny</h3>     
+                                <p class = "location">Preston Rd.</p>  
+                            </div>    
                         </div>
                     </div>
                 </div>
             </section>
             <section class = "second">
                 <div class = "second-sell">
-                    <p>Ready to Sell!</p>
+                    <p class = "subheader">Ready to Sell!</p>
                     <div class = "second-sell-title">
-                        <h3>Let's Tour And See Our House!</h3>
-                        <p>House recommended by our partners that have been curated to become the home of your dreams!</p>
+                        <h3 class = "second-header">Let's Tour And See Our House!</h3>
+                        <p class = "banner-header">House recommended by our partners that have been curated to become the home of your dreams!</p>
                     </div>
-                    <p>House Detail</p>
+                    <p class = "small-text" >House Detail</p>
                     <div class ="second-sell-detail">
                         <ol>
+                            <div class = "first-row">
                             <div class = "second-sell-detail-opt">
-                                <img class = "second-sell-detail-opt" src="./icons/Shape1.svg"> 4 Bedrooms         
+                                <img class = "second-sell-detail-opt-img" src="./icons/Shape1.svg"> 4 Bedrooms         
                             </div>
                             <div class = "second-sell-detail-opt">
-                                <img class = "second-sell-detail-opt" src="./icons/Group3.svg"> 1 Carport                  
+                                <img class = "second-sell-detail-opt-img" src="./icons/Group3.svg"> 1 Carport                  
+                            </div>
+                            </div>
+                            <div class = "first-row">
+                            <div class = "second-sell-detail-opt">
+                                <img class = "second-sell-detail-opt-img" src="./icons/Group 12.svg"> 2 Bathrooms                
                             </div>
                             <div class = "second-sell-detail-opt">
-                                <img class = "second-sell-detail-opt" src="./icons/Group 12.svg"> 2 Bathrooms                
+                                <img class = "second-sell-detail-opt-img" src="./icons/Group67.svg"> 2 Floors                
                             </div>
-                            <div class = "second-sell-detail-opt">
-                                <img class = "second-sell-detail-opt" src="./icons/Group67.svg"> 2 Floors                
                             </div>
                         </ol>
                     </div>
                     <div class = "second-sell-contact">
                         <img class = "second-sell-contact-img" src="./icons/Ellipse 6.svg"> 
-                        <h3>Diane Russell</h3>
-                        <p>Manage Director</p>
-                        <button class="second-sell-contact-btn">Contact Now</button>
+                        <div class = "info"> 
+                            <h3 class = "name">Diane Russell</h3>
+                            <p class = "location">Manage Director</p>
+                        </div> 
+                        <div class = "contact-btn">
+                            <button class="second-sell-contact-btn">Contact Now</button>
+                            <img class = "phone" src="./icons/Vectorphone.png"> 
+                        </div>
                     </div>
                 </div>
                 <div class = "second-media">
                     <video width="320" height="240" controls class = "sell-media-video">
                         <source src="./icons/videoplayback.mp4" type="video/mp4">
                     </video>
+                    <div class = "sell-media-imgs">
                     <img class = "sell-media-img" src="./icons/Rectangle 18.svg">
                     <img class = "sell-media-img" src="./icons/Rectangle 19.svg">
                     <img class = "sell-media-img" src="./icons/Rectangle 20.svg">
+                    </div>
                 </div>
             </section>
             <section class = "main-review">
                 <div class = "main-review-title">
-                    <p>See Tips And Trick From Our Partnership</p>
-                    <h2>What Our User Say About Us</h2>
+                    <p class = "subheader-other">See Our Review</p>
+                    <h2 class="subheader-bigger">What Our User Say About Us</h2>
                 </div>
                 <div class = "main-review-media">
                     <img class = "main-review-media-photo" src="./icons/Rectangle 21.svg">
                     <div class = "main-review-text">
                         <div class = "main-review-text-descrp">
-                            <h3>Best! I Got The House I Wanted Through Hounter</h3>
-                            <p>See Tips And Trick From Our Partnership</p>
+                            <h3 class = "review-title">Best! I Got The House I Wanted Through Hounter</h3>
+                            <p class = "review-subtitle">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
                         </div>
                         <div class = "main-review-text-human">
-                            <img class ="main-review-text-human-avt" src="./icons/Ellipse 6.svg"> 
-                            <h3>Diane Russell</h3>
-                            <p>Manage Director</p>
-                            <img class ="main-review-text-human-icon" src="./icons/Vector45.svg">
-                            <h3>4.6</h3>
+                            <div>
+                                <img class ="main-review-text-human-avt" src="./icons/Ellipse 6.svg">
+                            </div> 
+                            <div>
+                            <h3 class = "review-name">Diane Russell</h3>
+                            <p class = "review-job">Manage Director</p>
+                            </div>
+                            <div class = 'rate'>
+                                <img class ="star" src="./icons/Vector45.svg">
+                                <h3 class = "rate-level">4.6</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class = "main-more">
                 <div class = "main-more-title">
-                    <p>See Tips And Trick From Our Partnership</p>
-                    <h2>Find Out More About Selling And Buying Homes</h2>
-                    <button class="main-more-title">More Article!</button>
+                    <p class = "main-more-header" >See Tips And Trick From Our Partnership</p>
+                    <h2 class = "main-more-subheader" >Find Out More About Selling And Buying Homes</h2>
+                    <button class="main-more-title-btn">More Article!</button>
                 </div>
                 <div class = "main-more-section">
                     <div class = "main-more-section-media">
-                        <img class ="main-more-section-media-img" src="./icons/Rectangle 22.svg">
-                        <div class = "main-more-section-media-avt">
-                            <img class ="main-more-section-media-avt-pic" src="./icons/Ellipse 6.svg"> 
-                            <h3>Diane Russell</h3>
+                        <div class = "left">
+                            <div class = "img-section">
+                                <div class = "img-section-actual">
+                                    <img class ="main-more-section-media-img" src="./icons/Rectangle 22.svg">
+                                </div>
+                                <div class = "text-section">
+                                    <div class = "main-more-section-media-avt">
+                                        <img class ="main-more-section-media-avt-pic" id = "pic" src="./icons/Ellipse 6.svg"> 
+                                        <h3 class = "mini-name">Diane Russell</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-title">
+                                        <h3 class = "more-subtitle">The Things We Need To Check When We Want To Buy A House</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-time">
+                                        <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
+                                        <p class = "time">4 min read | 25 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "img-section">
+                                <div class = "img-section-actual">
+                                    <img class ="main-more-section-media-img" src="./icons/Rectangle 221.svg">
+                                </div>
+                                <div class = "text-section">
+                                    <div class = "main-more-section-media-avt">
+                                        <img class ="main-more-section-media-avt-pic" src="./icons/man1.jfif"> 
+                                        <h3 class = "mini-name">Courtney Henry</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-title">
+                                        <h3 class = "more-subtitle">7 Ways To Distinguish The Quality Of The House We Want To Buy</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-time">
+                                        <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
+                                        <p class = "time">6 min read | 24 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "img-section">
+                                <div class = "img-section-actual">
+                                    <img class ="main-more-section-media-img" src="./icons/Rectangle 222.svg">
+                                </div>
+                                <div class = "text-section">
+                                    <div class = "main-more-section-media-avt">
+                                        <img class ="main-more-section-media-avt-pic" src="./icons/man2.jfif"> 
+                                        <h3 class = "mini-name">Darlene Robertson</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-title">
+                                        <h3 class = "more-subtitle">The Best Way To Know The Quality Of The House We Want To Buy</h3>
+                                    </div>
+                                    <div class = "main-more-section-media-time">
+                                        <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
+                                        <p class = "time">2 min read | 24 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class = "main-more-section-media-title">
-                            <h3>The Things We Need To Check When We Want To Buy A House</h3>
-                        </div>
-                        <div class = "main-more-section-media-time">
-                            <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
-                            <p>4 min read | 25 Apr 2021</p>
-                        </div>
-                        <div class = "main-more-section-media">
-                            <img class ="main-more-section-media-img" src="./icons/Rectangle 221.svg">
-                            <div class = "main-more-section-media-avt">
-                                <img class ="main-more-section-media-avt-pic" src="./icons/Ellipse 68.svg"> 
-                                <h3>Courtney Henry</h3>
-                            </div>
-                            <div class = "main-more-section-media-title">
-                                <h3>7 Ways To Distinguish The Quality Of The House We Want To Buy</h3>
-                            </div>
-                            <div class = "main-more-section-media-time">
-                                <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
-                                <p>6 min read | 24 Apr 2021</p>
-                            </div>
-                        </div>
-                        <div class = "main-more-section-media">
-                            <img class ="main-more-section-media-img" src="./icons/Rectangle 222.svg">
-                            <div class = "main-more-section-media-avt">
-                                <img class ="main-more-section-media-avt-pic" src="./icons/Ellipse 69.svg"> 
-                                <h3>Darlene Robertson</h3>
-                            </div>
-                            <div class = "main-more-section-media-title">
-                                <h3>The Best Way To Know The Quality Of The House We Want To Buy</h3>
-                            </div>
-                            <div class = "main-more-section-media-time">
-                                <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
-                                <p>2 min read | 24 Apr 2021</p>
-                            </div>
-                        </div>
-                        <div class = "main-more-section-media">
-                            <img class ="main-more-section-media-img" src="./icons/Rectangle 23.svg">
-                            <div class = "main-more-section-media-avt">
-                                <img class ="main-more-section-media-avt-pic" src="./icons/Ellipse 64.svg"> 
-                                <h3>Cameron Williamson</h3>
-                            </div>
-                            <div class = "main-more-section-media-title">
-                                <h3>12 Things To Know Before Buying A House</h3>
-                                <p>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
-                            </div>
-                            <div class = "main-more-section-media-time">
-                                <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
-                                <p>8 min read | 25 Apr 2021</p>
-                            </div>
+                        <div class = "right">
+                                <img class ="main-more-section-media-img" src="./icons/Rectangle 23.svg">
+                                <div class = "main-more-section-media-avt">
+                                    <img class ="main-more-section-media-avt-pic" src="./icons/man3.jfif"> 
+                                    <h3 class = "mini-name">Cameron Williamson</h3>
+                                </div>
+                                <div class = "main-more-section-media-title">
+                                    <h3 class = "bigger-subtitle">12 Things To Know Before Buying A House</h3>
+                                    <p class = "smaller-subtitle">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                                </div>
+                                <div class = "main-more-section-media-time">
+                                    <img class ="main-more-section-media-time-pic" src="./icons/Vectorclock.svg"> 
+                                    <p>8 min read | 25 Apr 2021</p>
+                                </div>
                         </div>
                     </div>
                 </div>    
             </section>
             <section class = "main-sub">
-                <img class ="main-sub-img" src="./icons/Rectangle 241.svg">  
-                <h1>Subscribe For More Info And Update From Hounter</h1>
-                <form action="/search" method="get" class = "main-sub-form">
-                    <input class = "main-sub-search" type="text" placeholder="Your email here!">
-                    <input class = "main-sub-btn" type="submit" value="Subsribe Now">
-                </form>          
+                <img class ="main-sub-img" src="./icons/Subscribe123.png">  
+                <div class = "main-sub-inside">
+                    <h1 class = "subscribe-title">Subscribe For More Info And Update From Hounter</h1>
+                    <form action="/search" method="get" class = "main-sub-form">
+                        <img class = "envelop" src="./icons/eva_email-fill.svg">    
+                        <input class = "banner-searchbar-input" type="text" placeholder="Your email here!">
+                        <input class = "banner-searchbar-btn" type="submit" value="Subsribe Now">
+                    </form>   
+                </div>     
             </section>
         </main>
         <footer>
@@ -262,38 +299,37 @@
             <div class = "footer">
                 <div class = "footer-left">
                     <div class = "footer-left-title">
-                        <img class="footer-left-title" src="./icons/logo_pic.svg"/>
-                        <h3>Hounter</h3>
+                        <img class="footer-left-title-icon" src="./icons/logo_pic.svg"/>
+                        <h3 class = "footer-main-title" >Hounter</h3>
                     </div>
                     <p class = "footer-left-text">We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
-                    <div class = "footer-left-icons">
+                    <div class = "footer-left-icons-main">
                         <img class="footer-left-icons" src="./icons/Vector8.svg"/>
                         <img class="footer-left-icons" src="./icons/Vector9.svg"/>
                         <img class="footer-left-icons" src="./icons/Vector0.svg"/>
                     </div>
                 </div>
                 <div class = "footer-right">
-                    <div class = "footer-right">
-                        <h3>Property</h3>
-                        <a class="footer-right" href="#">House</a>
-                        <a class="footer-right" href="#">Apartment</a>
-                        <a class="footer-right" href="#">Villa</a>
-                    </div>
-                    <div class = "footer-right">
-                        <h3>Article</h3>
-                        <a class="footer-right" href="#">New Article</a>
-                        <a class="footer-right" href="#">Popular Article</a>
-                        <a class="footer-right" href="#">Most Read</a>
-                        <a class="footer-right" href="#">Tips & Tricks</a>
-                    </div>
-                    <div class = "footer-right">
-                        <h3>Contact</h3>
-                        <a class="footer-right" href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
-                        <a class="footer-right" href="#">(671) 555-0110</a>
-                        <a class="footer-right" href="#">info@hounter.com</a>
-                    </div>
+                    <h3 class = "footer-title">Property</h3>
+                    <a class="footer-right-title" href="#">House</a>
+                    <a class="footer-right-title" href="#">Apartment</a>
+                    <a class="footer-right-title" href="#">Villa</a>
+                </div>
+                <div class = "footer-right">
+                    <h3 class = "footer-title">Article</h3>
+                    <a class="footer-right-title" href="#">New Article</a>
+                    <a class="footer-right-title" href="#">Popular Article</a>
+                    <a class="footer-right-title" href="#">Most Read</a>
+                    <a class="footer-right-title" href="#">Tips & Tricks</a>
+                </div>
+                <div class = "footer-right">
+                    <h3 class = "footer-title">Contact</h3>
+                    <a class="footer-right-title" href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                    <a class="footer-right-title" href="#">(671) 555-0110</a>
+                    <a class="footer-right-title" href="#">info@hounter.com</a>
                 </div>
             </div>
+            <img class ="bottom" src="./icons/Group 14bottom.png"> 
         </footer>
     </body>
 </html>
